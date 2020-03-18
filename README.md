@@ -1,4 +1,4 @@
-Game link: https://capitandolphin.itch.io/phishingmodule
+# Game link: https://capitandolphin.itch.io/phishingmodule
 
 
 This is one module for a school project involving best cybersecurity practices.
