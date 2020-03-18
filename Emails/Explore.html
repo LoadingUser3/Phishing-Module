@@ -11,7 +11,33 @@
           
     </head>
     <body>
+        <!--Score-->
+        <!--
+        <div class="scoring" id="scoring">
+        <form>
+         <label for="score">Score (Debugging)</label>
+        <input type="number" id="score" name="score" step="1">
+        </form>
         
+        
+        </div>
+        -->
+        <!--Sidebar-->
+        <!--
+            <div class="sidebar" id="toolbox">
+                <h3>Toolbox</h3>
+                <div class ="tools">
+                    
+                    <button class="detect" id="investigate" onclick = "modeChange()">Inspect</button>
+                    <button onclick="speak()">Talk</button>
+                    <button onclick="actions()">Action</button>
+                    <button class="close" onclick="closeTools()">Close</button>
+                </div>
+                
+            </div>
+
+        <span onclick="openTools()" style = "cursor:pointer; font-size:25px">&#9776;Open Tools</span>
+        -->
     <div id="Success Part">    
         <!--Success Prompt-->
         <div id="successPrompt" class="successPrompt">
@@ -167,109 +193,7 @@
 
         
 </div>
-    <div id="Failing Part">  
-        <!--Failure Prompt-->
-        <div id="failurePrompt" class="failurePrompt">
-            <div class="failureContent">
-                <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
-                
-                
-                
-        <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
-            </div>
-        </div>
-         
-         <div id="failureFrom" class="failureFrom">
-            <div class="failureContent">
-                <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
-                <p>Often enough, one of the simplest ways to see if the email was a phishing attempt is to check whether it is from a reliable source. Any discrepencies can indicate that it is a phishing attempt. In this case, the sender was from a reliable source. </p>
-                
-                
-        <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
-            </div>
-        </div>
-         <div id="failureTo" class="failureTo">
-            <div class="failureContent">
-                <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
-                <p>At the moment, there is no way to detect whether the "To" section of an email can be used for phishing, as it is directed towards a specific email. Therefore, this choice would always be incorrect. </p>
-                
-                
-        <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
-            </div>
-        </div>
-         <div id="failureSubject" class="failureSubject">
-            <div class="failureContent">
-                <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
-                <p>Typically, the subject may contain threatening or very urgent vocublary to inistil fear on the reader. In this case, the subject was not the reason why this email can be considered a phishing attempt. </p>
-                
-                
-        <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
-            </div>
-        </div>
-         
-         <div id="failureDear" class="failureDear">
-            <div class="failureContent">
-                <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
-                <p>Normally, a phishing attempt will have a very generic name here, such as Customer. Most companies would either use the full name of the reader or no name at all. In this case, it was not an indicator of a phishing attempt.</p>
-                
-                
-        <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
-            </div>
-        </div>
-         <div id="failureBody" class="failureBody">
-            <div class="failureContent">
-                <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
-                <p>Carefully reading the body of an email can immediately show that it is a phishing attempt if there are any misspellings or if it asks for personal information. Most companies would not ask for any personal information via email. In this case, the body of the email was not an indicator of a phishing attempt. </p>
-                
-                
-        <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
-            </div>
-        </div>
-         <div id="failureLink" class="failureLink">
-            <div class="failureContent">
-                <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
-                <p>Links are often used to steal information from potential victims. Phishers would try to recreate a form on a site that is meant to steal information. Hovering over the link to check where the hyperlink leads without clicking on it can show whether or not it is going to a reliable site. In this case, this is a reliable site.</p>
-                
-                
-        <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
-            </div>
-        </div>
-         <div id="failureAttach" class="failureAttach">
-            <div class="failureContent">
-                <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
-                <p>Never open an attachment UNLESS it is from a reliable source. Attachments that are carelessly opened can  not only lead to information from the targeted employee to be stolen but also viruses and other methods of information stealing being put onto the computer. </p>
-                
-                
-        <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
-            </div>
-        </div>
-         <div id="failureNothing" class="failureNothing">
-            <div class="failureContent">
-                <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
-                <p>There may have been something that was missed while checking this email. Keep investigating to find out what it may have been!</p>
-                
-        <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
-            </div>
-        </div>
-    </div> 
+     
         
         
         
@@ -283,7 +207,7 @@
                     <pre>From: tutorial.net</pre>
                     </div>
                     
-                    <div id="to" onclick="failureT()">
+                    <div id="to" onclick="successT()">
                     <pre>To: Protag47@email.com</pre>
                     </div>
                     
@@ -323,7 +247,7 @@ Copyright 2020</pre>
                 
             </div>
         <div id="NothingButton" class="NothingButton" >
-            <button onclick="failureN()">There is nothing suspicious about this email</button>
+            <button onclick="successN()">There is nothing suspicious about this email</button>
             
         </div>
     
@@ -334,6 +258,7 @@ Copyright 2020</pre>
         
         
 <script src="Emailscripts.js"></script>
+<script src="//cdn.jsdelivr.net/npm/phaser@3.22.0/dist/phaser.js"></script>
     </body>
 
 </html>
