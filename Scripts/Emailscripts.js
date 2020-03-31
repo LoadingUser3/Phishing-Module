@@ -2,6 +2,9 @@
 //By Jerfyn Rosario
 
 
+
+//var inspectMode = false;
+
 var ty=0;
 var txtW = 'HACK DETECTED! HACK DETECTED!';
 var speed = 50;
@@ -12,6 +15,113 @@ var audioS = document.getElementById("audioSuccess");
 var audioF = document.getElementById("audioFailure");
 
 
+
+
+/*
+function modeChange() {    
+    inspectMode = !inspectMode;
+    if(inspectMode){
+        
+        document.body.style.cursor = "zoom-in";
+        alert("Inspect activated.")
+    }
+    else {
+        
+        document.body.style.cursor = "default";
+        alert("Inspect deactivated.")
+    
+        
+    }
+}
+
+function openTools() {
+    document.getElementById("toolbox").style.width = "160px";
+}
+
+function closeTools() {
+    document.getElementById("toolbox").style.width = "0";
+}
+*/
+/*
+function hilite() {
+        var a = document.getElementById("from");
+        a.classList.toggle("highlight");
+        
+        var b = document.getElementById("to");
+        b.classList.toggle("highlight");
+        
+        var c = document.getElementById("subject");
+        c.classList.toggle("highlight");
+        
+        var d = document.getElementById("dear");
+        d.classList.toggle("highlight");
+        
+        var e = document.getElementById("topbody");
+        e.classList.toggle("highlight");
+        
+        var f = document.getElementById("midbody");
+        f.classList.toggle("highlight");
+        
+        var g = document.getElementById("bottombody");
+        g.classList.toggle("highlight");
+        
+        var h = document.getElementById("link");
+        g.classList.toggle("highlight");
+    
+}
+
+function hilite1() {
+
+        var b = document.getElementById("to");
+        b.classList.toggle("highlight");
+
+}
+function hilite2() {
+
+        var c = document.getElementById("subject");
+        c.classList.toggle("highlight");
+
+}
+function hilite3() {
+
+        var d = document.getElementById("dear");
+        d.classList.toggle("highlight");
+
+}
+
+function hilite4() {
+
+        var e = document.getElementById("topbody");
+        e.classList.toggle("highlight");
+
+}
+
+function hilite5() {
+
+        var f = document.getElementById("midbody");
+        f.classList.toggle("highlight");
+
+}
+
+function hilite6() {
+
+        var g = document.getElementById("bottombody");
+        g.classList.toggle("highlight");
+
+}
+
+function hiliteLink() {
+
+        var h = document.getElementById("link");
+        h.classList.toggle("highlight");
+
+}
+
+function hilite7(){
+    var j = document.getElementById("extra");
+    j.classList.toggle("highlight");
+}
+*/
 
 
 function typeAnim() {
@@ -249,5 +359,24 @@ function closePrompt() {
 
 function audioSuccess() {
     audioS.play();
+}
+
+function randPage() {
+    var randomize = Math.round(Math.random()*9);
+    var epages= new Array();
+        epages[0] = "Email1.html";
+        epages[1] = "Email2.html";
+        epages[2] = "Email3.html";
+        epages[3] = "Email4.html";
+        epages[4] = "Email5.html";
+        epages[5] = "Email6.html";
+        epages[6] = "Email7.html";
+        epages[7] = "Email8.html";
+        epages[8] = "Email9.html";
+        epages[9] = "Email10.html";
+    /*var epages = new Array ("Email1.html", "Email2.html", "Email3.html", "Email4.html", "Email5.html", "Email6.html", "Email7.html", "Email8.html", "Email9.html", "Email10.html");*/
+    
+    window.location = epages[randomize];
+    
 }
 
