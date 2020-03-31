@@ -11,7 +11,33 @@
           
     </head>
     <body>
- 
+        <!--Score-->
+        <!--
+        <div class="scoring" id="scoring">
+        <form>
+         <label for="score">Score (Debugging)</label>
+        <input type="number" id="score" name="score" step="1">
+        </form>
+        
+        
+        </div>
+        -->
+        <!--Sidebar-->
+        <!--
+            <div class="sidebar" id="toolbox">
+                <h3>Toolbox</h3>
+                <div class ="tools">
+                    
+                    <button class="detect" id="investigate" onclick = "modeChange()">Inspect</button>
+                    <button onclick="speak()">Talk</button>
+                    <button onclick="actions()">Action</button>
+                    <button class="close" onclick="closeTools()">Close</button>
+                </div>
+                
+            </div>
+
+        <span onclick="openTools()" style = "cursor:pointer; font-size:25px">&#9776;Open Tools</span>
+        -->
     <div id="Success Part">    
         <!--Success Prompt-->
         <div id="successPrompt" class="successPrompt">
@@ -41,7 +67,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email4.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -71,8 +100,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email4.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
-         
+                -->
             </div>
         </div>
         
@@ -87,7 +118,10 @@
                 
                 
         <!--Success Close-->
+                 <button><a href = "Email4.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -103,7 +137,10 @@
                 
                 
         <!--Success Close-->
+                 <button><a href = "Email4.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -132,7 +169,10 @@
                 
                 
         <!--Success Close-->
+                 <button><a href = "Email4.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -142,13 +182,16 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Not every email is a phishing email. Sometimes, there may be some false flags about the email that would be misinterpreted by the reader. </p>
+                <p>The only part of this email that may have lead to someone thinking it is a phishing attempt is the subject, especially if the password was not changed. However, it was from a reliable source, and the body did not show signs of phishing.  </p>
             
         
                 
                 
         <!--Success Close-->
+                 <button><a href = "Email4.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -174,7 +217,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Often enough, one of the simplest ways to see if the email was a phishing attempt is to check whether it is from a reliable source. Any discrepencies can indicate that it is a phishing attempt. In this case, the sender was from a reliable source. </p>
+                <p>Chase.com is a reliable source. This can be confirmed by searching chase.com on any search engine and seeing the links in the result.</p>
                 
                 
         <!--Failure Close-->
@@ -196,7 +239,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Typically, the subject may contain threatening or very urgent vocublary to inistil fear on the reader. In this case, the subject was not the reason why this email can be considered a phishing attempt. </p>
+                <p>This type of subject, while it can be used as a phishing attempt, is actually standard for many high profile companies. Not only that, but it does seem like it is from a reliable source. </p>
                 
                 
         <!--Failure Close-->
@@ -219,7 +262,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Carefully reading the body of an email can immediately show that it is a phishing attempt if there are any misspellings or if it asks for personal information. Most companies would not ask for any personal information via email. In this case, the body of the email was not an indicator of a phishing attempt. </p>
+                <p>This email does not have any misspelling, threats, nor does it prompt the reader to give any personal information. It actually encourages the reader to talk to the support team, which they want the reader to find for themselves. Therefore, this is not a phishing attempt</p>
                 
                 
         <!--Failure Close-->
@@ -284,14 +327,14 @@
                     </div>
                     
                     <div id="subject" onclick = "failureS()">
-                    <pre>Subject: Your Password was changed successfully</pre>
+                    <pre>Subject: Your Password Was Changed Successfully</pre>
                     </div>
                 </div>
                 <div class="emailbody" id="emailbody">
                     <pre class="dear" id="dear" onclick = "failureD()"></pre>
                     
 <pre class="topbody" id="topbody" onclick = "failureB()">This is a confirmation that the password associated with your Chase.com account, 
-EMPLOYEE47, was successfully changed</pre>
+PROTAG47, was successfully changed</pre>
  
                   
 <a class="link" id="link" href title = "www.chase.net"  onclick = "successLink()"></a>

@@ -11,7 +11,33 @@
           
     </head>
     <body>
+        <!--Score-->
+        <!--
+        <div class="scoring" id="scoring">
+        <form>
+         <label for="score">Score (Debugging)</label>
+        <input type="number" id="score" name="score" step="1">
+        </form>
         
+        
+        </div>
+        -->
+        <!--Sidebar-->
+        <!--
+            <div class="sidebar" id="toolbox">
+                <h3>Toolbox</h3>
+                <div class ="tools">
+                    
+                    <button class="detect" id="investigate" onclick = "modeChange()">Inspect</button>
+                    <button onclick="speak()">Talk</button>
+                    <button onclick="actions()">Action</button>
+                    <button class="close" onclick="closeTools()">Close</button>
+                </div>
+                
+            </div>
+
+        <span onclick="openTools()" style = "cursor:pointer; font-size:25px">&#9776;Open Tools</span>
+        -->
     <div id="Success Part">    
         <!--Success Prompt-->
         <div id="successPrompt" class="successPrompt">
@@ -41,7 +67,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email7.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -71,7 +100,10 @@
                 
                 
         <!--Success Close-->
+               <button><a href = "Email7.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -87,7 +119,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email7.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -103,7 +138,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email7.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -133,7 +171,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email7.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -143,13 +184,16 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Not every email is a phishing email. Sometimes, there may be some false flags about the email that would be misinterpreted by the reader. </p>
+                <p>Initially, this "Check Activity" button may raise suspicion on whether or not this email is a phishing attempt. Once the email was investigated and the sender was confirmed reliable, it was shown that this was not a phishing attempt. Great work! </p>
             
         
                 
                 
         <!--Success Close-->
+                <button><a href = "Email7.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -165,7 +209,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email7.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -189,7 +236,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Often enough, one of the simplest ways to see if the email was a phishing attempt is to check whether it is from a reliable source. Any discrepencies can indicate that it is a phishing attempt. In this case, the sender was from a reliable source. </p>
+                <p>Often enough, one of the simplest ways to see if the email was a phishing attempt is to check whether it is from a reliable source. no-reply accounts with a reliable domain are usually from a trusted source. </p>
                 
                 
         <!--Failure Close-->
@@ -211,7 +258,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Typically, the subject may contain threatening or very urgent vocublary to inistil fear on the reader. In this case, the subject was not the reason why this email can be considered a phishing attempt. </p>
+                <p>While the vocabulary may seem a bit urgent or major, it is not trying to grab the attention of the reader. It is more calm and straightforward on what the email is about. Due to this, the subject is not considered a suspicious item in the email.  </p>
                 
                 
         <!--Failure Close-->
@@ -223,7 +270,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Normally, a phishing attempt will have a very generic name here, such as Customer. Most companies would either use the full name of the reader or no name at all. In this case, it was not an indicator of a phishing attempt.</p>
+                <p></p>
                 
                 
         <!--Failure Close-->
@@ -234,7 +281,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Carefully reading the body of an email can immediately show that it is a phishing attempt if there are any misspellings or if it asks for personal information. Most companies would not ask for any personal information via email. In this case, the body of the email was not an indicator of a phishing attempt. </p>
+                <p>This email does mention that a new sign in was made in your account, but doesn't really provide a threat nor does it ask for information from you. It doesn't prompt you to do much besides give you a heads up. Because of this, the email is not suspicious due to the body. </p>
                 
                 
         <!--Failure Close-->
@@ -280,7 +327,7 @@
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
                 <br>
-                <p>Some companies use buttons in order to allow users to do certain activites. When reading email such as this, check to see if it is from a trusted sender and if the button is clicked, make sure it leads to a trusted site. In this case, the email was trusworthy.</p>
+                <p>Some companies use buttons in order to allow users to do certain activites. When reading email such as this, check to see if it is from a trusted sender and if the button is clicked, make sure it leads to a trusted site. In this case, since the email sender was trusworthy, so was this button.</p>
             
         
                 
@@ -301,7 +348,18 @@
         <button onclick="successA()">I think this attachment is an example of phishing</button>
         <button onclick="closePrompt()">Go Back</button>
         </div>
-        </div>          
+        </div>
+        
+ <!--Extra button confirmation prompt-->       
+ <div class="buConfirm" id="buConfirm">
+    <div class="buConfirmContent" id="atConfirmContent">
+        <p>Please select one of the options below</p>
+        <br>
+        <button onclick="successExBu()">I want to click this</button>
+        <button onclick="failureExBu()">I think this is an example of phishing</button>
+        <button onclick="closePrompt()">Go Back</button>
+        </div>
+        </div> 
         
         <!--Main-->
             <div class="main">
@@ -333,7 +391,7 @@
 <pre class="bottombody" id="bottombody" onclick = "failureB()">Your Google Account was just signed in to from a new Mac device. You're getting this email to make sure this was you.</pre>
                     
                     
-            <button onclick="failureExBu()">Check Activity</button>
+            <button onclick="buttonConfirm()">Check Activity</button>
                     
             
                     

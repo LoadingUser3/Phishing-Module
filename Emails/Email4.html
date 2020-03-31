@@ -11,7 +11,33 @@
           
     </head>
     <body>
+        <!--Score-->
+        <!--
+        <div class="scoring" id="scoring">
+        <form>
+         <label for="score">Score (Debugging)</label>
+        <input type="number" id="score" name="score" step="1">
+        </form>
         
+        
+        </div>
+        -->
+        <!--Sidebar-->
+        <!--
+            <div class="sidebar" id="toolbox">
+                <h3>Toolbox</h3>
+                <div class ="tools">
+                    
+                    <button class="detect" id="investigate" onclick = "modeChange()">Inspect</button>
+                    <button onclick="speak()">Talk</button>
+                    <button onclick="actions()">Action</button>
+                    <button class="close" onclick="closeTools()">Close</button>
+                </div>
+                
+            </div>
+
+        <span onclick="openTools()" style = "cursor:pointer; font-size:25px">&#9776;Open Tools</span>
+        -->
     <div id="Success Part">    
         <!--Success Prompt-->
         <div id="successPrompt" class="successPrompt">
@@ -34,14 +60,17 @@
                 <p>Success!</p>
                 
                 <br>
-                <p>A way to be sure that the email is from a trustworthy source is to verify the URL of the sender. If there were anything off about the sender, such as a difference between a .com and a .net, the email could possibly be a phising attempt. </p>
+                <p>GooddDeals.org did not seem reliable, especially since the name of the sender is a bit misspelled. Good job catching that!</p>
                 
             
         
                 
                 
         <!--Success Close-->
+                 <button><a href = "Email5.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -65,13 +94,16 @@
             
                 <p>Success!</p>
                 <br>
-                <p>A very threating or urgent sounding subject would be a big indicator that the email is a phishing email. This is meant to make the reader very fearful and quick to fix whatever situation the subject may think they were in.  </p>
+                <p>"Won what?" is usually the question these type of emails try to make the reader ask to open this email. Nice job spotting this!  </p>
             
         
                 
                 
         <!--Success Close-->
+                 <button><a href = "Email5.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -81,13 +113,16 @@
             
                 <p>Success!</p>
                 <br>
-                <p>A vague greeting such as "Dear Customer" may be a big indicator of phishing, especially if it came from a big company such as a bank. Most of these big companies would address the reader by their first and last name.</p>
+                <p>"Prizewinner" is a very vague greeting for any email. When the greeting of an email seems too general, it may be a phising attempt. Good job noticing this!</p>
             
         
                 
                 
         <!--Success Close-->
+                <button><a href = "Email5.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -97,13 +132,16 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Check for any misspelling or offers that may be too good to be true. The signature from the company may also be different from the company's actual signature. Compare with previous emails from that company in order to ensure that it is up to their standards. </p>
+                <p>Some questions that should be asked when reading this body are "Did I sign up for a raffle?" "What is this raffle?" "Who created this raffle?" These may have been some of the questions you have asked as well, and thus realized that this may have been a phishing attempt.  </p>
             
         
                 
                 
         <!--Success Close-->
+                 <button><a href = "Email5.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -133,7 +171,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email5.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -149,7 +190,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email5.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -253,7 +297,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>There may have been something that was missed while checking this email. Keep investigating to find out what it may have been!</p>
+                <p>This email was very vague in many places. Whenever an email is too vague, leaving you with questions that you are tempted to ask, it is possible that it may be a phishing attempt. Try checking certain areas of this email to see how they are used for phishing. </p>
                 
         <!--Failure Close-->
                 <button onclick="closeFPrompt()">Continue</button>
@@ -277,7 +321,7 @@
             
                 <div class="emailtop">
                     <div id="from"  onclick="successF()" >
-                    <pre>From: GoodDeals.org</pre>
+                    <pre>From: GooddDeals.com</pre>
                     </div>
                     
                     <div id="to" onclick="failureT()">

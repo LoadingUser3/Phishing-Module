@@ -11,7 +11,33 @@
           
     </head>
     <body>
-    
+        <!--Score-->
+        <!--
+        <div class="scoring" id="scoring">
+        <form>
+         <label for="score">Score (Debugging)</label>
+        <input type="number" id="score" name="score" step="1">
+        </form>
+        
+        
+        </div>
+        -->
+        <!--Sidebar-->
+        <!--
+            <div class="sidebar" id="toolbox">
+                <h3>Toolbox</h3>
+                <div class ="tools">
+                    
+                    <button class="detect" id="investigate" onclick = "modeChange()">Inspect</button>
+                    <button onclick="speak()">Talk</button>
+                    <button onclick="actions()">Action</button>
+                    <button class="close" onclick="closeTools()">Close</button>
+                </div>
+                
+            </div>
+
+        <span onclick="openTools()" style = "cursor:pointer; font-size:25px">&#9776;Open Tools</span>
+        -->
     <div id="Success Part">    
         <!--Success Prompt-->
         <div id="successPrompt" class="successPrompt">
@@ -34,14 +60,17 @@
                 <p>Success!</p>
                 
                 <br>
-                <p>A way to be sure that the email is from a trustworthy source is to verify the URL of the sender. If there were anything off about the sender, such as a difference between a .com and a .net, the email could possibly be a phising attempt. </p>
+                <p>Even though it says Amazon at some point in the email, it is not the type of email address Amazon sends from. Good job spotting this!</p>
                 
             
         
                 
                 
         <!--Success Close-->
+                <button><a href = "Email6.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -65,13 +94,16 @@
             
                 <p>Success!</p>
                 <br>
-                <p>A very threating or urgent sounding subject would be a big indicator that the email is a phishing email. This is meant to make the reader very fearful and quick to fix whatever situation the subject may think they were in.  </p>
+                <p>Subjects should be more descriptive than a single word. Phishers will try to get reader's attention with capital letters and seemingly threatening subjects. Nice job spotting this!</p>
             
         
                 
                 
         <!--Success Close-->
+                <button><a href = "Email6.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -87,7 +119,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email6.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -97,13 +132,16 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Check for any misspelling or offers that may be too good to be true. The signature from the company may also be different from the company's actual signature. Compare with previous emails from that company in order to ensure that it is up to their standards. </p>
+                <p>Lots of times, phishers would say that the email is the nth time they are reminding you of something. This is usually to make it sound a bit more urgent and to put the blame on the reader for not responding before. There was also some misspelling in thes email. Good job spotting this! </p>
             
         
                 
                 
         <!--Success Close-->
+                <button><a href = "Email6.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -133,7 +171,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email6.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -149,7 +190,10 @@
                 
                 
         <!--Success Close-->
+                <button><a href = "Email6.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -159,13 +203,16 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Sometimes, phishing emails will prompt you to click on certain buttons in order to do an action they want, when they are really leading to a site with bad intentions</p>
+                <p>Unsubscribing from a site usually involves going to the site and unchecking an option or through third party programs. Most sites would not give a button prompt to unsubscribe to them and would rather give you that option in the majority of their promotional emails. Good spotting!</p>
             
         
                 
                 
         <!--Success Close-->
+                <button><a href = "Email6.html">Continue to next email</a></button>
+                <!--
                 <button onclick="closeSPrompt()">Continue</button>
+                -->
          
             </div>
         </div>
@@ -275,19 +322,19 @@
                 <button onclick="closeFPrompt()">Continue</button>
             </div>
              
-        <div id="failureExtraButton" class="failureExtraButton">
+             <div id="failureExtraButton" class="failureExtraButton">
             <div class="failureContent">
             
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
                 <br>
-                <p></p>
+                <p>Not many companies/retail outlets will send a direct email to unsubscribe from their subscriptions. Usually, they'll place this option in their regular newsletters. Check through this email again to see what makes this a phishing attempt.  </p>
             
         
                 
                 
         <!--Failure Close-->
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="closeFPrompt()">Continue</button>
          
             </div>
         </div>
@@ -305,7 +352,19 @@
         <button onclick="successA()">I think this attachment is an example of phishing</button>
         <button onclick="closePrompt()">Go Back</button>
         </div>
-        </div>          
+        </div>  
+        
+        
+         <!--Extra button confirmation prompt-->       
+ <div class="buConfirm" id="buConfirm">
+    <div class="buConfirmContent" id="atConfirmContent">
+        <p>Please select one of the options below</p>
+        <br>
+        <button onclick="failureExBu()">I want to click this</button>
+        <button onclick="successExBu()">I think this is an example of phishing</button>
+        <button onclick="closePrompt()">Go Back</button>
+        </div>
+        </div> 
         
         <!--Main-->
             <div class="main">
@@ -343,7 +402,7 @@ Do you want to unsubscribe?
                     
 <pre class="bottombody" id="bottombody" onclick = "failureB()"></pre>
                     
-<button onclick="successExBu()">Yes</button><button onclick="successExBu()">No</button>
+<button onclick="buttonConfirm()">Yes</button><button onclick="buttonConfirm()">No</button>
                     
             
                     
