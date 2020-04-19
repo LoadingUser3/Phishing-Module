@@ -1,6 +1,6 @@
 ### [Game hosted in itch.io](https://capitandolphin.itch.io/phishingmodule)
 
-###[Version that is integrated to full game here}(https://capitandolphin.itch.io/sample1)
+### [Version that is integrated to full game here}(https://capitandolphin.itch.io/sample1)
 
 
 This is one module for a school project involving best cybersecurity practices.
