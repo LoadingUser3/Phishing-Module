@@ -1,9 +1,31 @@
 /*Stylesheet for Emails
 By Jerfyn Rosario*/
 
+.startPage {
+    background-color: cornsilk;
+    
+    padding: 0px 10px;
+    text-align: center;
+    
+}
+
+.startPage button {
+    margin-left:450px;
+    text-align: center;
+    background-color: orange;
+    border: 2px solid black;
+    color:black;
+    padding: 10px 20px;
+    display:block;
+    width: 25%;
+    cursor: pointer;   
+}
+
+
+
 .main{
     background-color: cornsilk;
-    margin-left: 160px;
+    /*margin-left: 160px;*/
     padding: 0px 10px;
     
     
@@ -30,7 +52,7 @@ pre:hover{
     color:black;
     padding: 10px 20px;
     display:block;
-    width: 10&;
+    width: 10%;
     cursor: pointer;
 }
 
@@ -88,7 +110,7 @@ pre:hover{
     cursor: pointer;
 }
 .NothingButton button {
-    margin-left: 350px;
+    margin-left: 200px;
     text-align: center;
     background-color: orange;
     border: 2px solid black;
