@@ -5,39 +5,13 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Phishing Chase 1</title>
+        <title>Phishing Reward 1</title>
         <meta name="description" content="Gameplay">
         <link rel="stylesheet" href="EmailStyle.css">
           
     </head>
     <body>
-        <!--Score-->
-        <!--
-        <div class="scoring" id="scoring">
-        <form>
-         <label for="score">Score (Debugging)</label>
-        <input type="number" id="score" name="score" step="1">
-        </form>
-        
-        
-        </div>
-        -->
-        <!--Sidebar-->
-        <!--
-            <div class="sidebar" id="toolbox">
-                <h3>Toolbox</h3>
-                <div class ="tools">
-                    
-                    <button class="detect" id="investigate" onclick = "modeChange()">Inspect</button>
-                    <button onclick="speak()">Talk</button>
-                    <button onclick="actions()">Action</button>
-                    <button class="close" onclick="closeTools()">Close</button>
-                </div>
-                
-            </div>
 
-        <span onclick="openTools()" style = "cursor:pointer; font-size:25px">&#9776;Open Tools</span>
-        -->
     <div id="Success Part">    
         <!--Success Prompt-->
         <div id="successPrompt" class="successPrompt">
@@ -78,7 +52,7 @@
         <div id="successTo" class="successTo">
             <div class="successContent">
             
-                <p></p>
+                <p>Wait, who is trying to pretend to be a tutorial bot!? This seems like it was trying to target you in particular because it is taking a concept familiar to you and making you believe it is that. Good work catching that it is not a real tutorial bot!</p>
             
         
                 
@@ -94,7 +68,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Confirmation of billing histories, asking for billing or personal information, and anything seemingly threatening as the subject of the email can be used to entice someone to click on the email. Good work seeing this here!</p>
+                <p>Why would we send an email that the tutorial is complete, when we could just give you a popup notification for it. Good job finding this.  </p>
             
         
                 
@@ -134,7 +108,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Check for any misspelling or offers that may be too good to be true. The signature from the company may also be different from the company's actual signature. Compare with previous emails from that company in order to ensure that it is up to their standards. </p>
+                <p>You already have completed the tutorial if you passed the exploration email! Good work.</p>
             
         
                 
@@ -151,7 +125,7 @@
         <div id="successLink" class="successLink">
             <div class="successContent">
             
-             <p>Even though a link may state "View All Transactions", it doesn't mean it will lead to what it says. Hovering over these links and seeing their destination will always show the true location of the link. Good work seeing this!</p>
+             <p>We would send you a reward directly when you complete the tutorial! We wouldn't want to risk using an email to do this. Good job noticing this. </p>
                 <br>
                 
             
@@ -241,7 +215,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>While a "transaction confirmation" may seem a bit suspicious, some companies do inform the customer when a transaction seems suspicious. In this case, the subject was not the reason why this email can be considered a phishing attempt.</p>
+                <p>A completed tut</p>
                 
                 
         <!--Failure Close-->
@@ -253,7 +227,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Normally, a phishing attempt will have a very generic name here, such as Customer. Most companies would either use the full name of the reader or no name at all. In this case, it was not an indicator of a phishing attempt.</p>
+                <p>This greeting does not show anything that may be suspicious or show that this is a phishing email. Keep checking for what may cause this to be a phising attempt.</p>
                 
                 
         <!--Failure Close-->
@@ -334,7 +308,7 @@
                     </div>
                 </div>
                 <div class="emailbody" id="emailbody">
-                    <pre class="dear" id="dear" onclick = "successD()">Dear Protag 47,</pre>
+                    <pre class="dear" id="dear" onclick = "failureD()">Dear Protag47,</pre>
                     
 <pre class="topbody" id="topbody" onclick = "successB()">Thanks for completeing the tutorial for phishing!</pre>
 
@@ -347,7 +321,7 @@
                     
 <p class="linksH">Claim the reward</p>
                     
- <span class="hoverLink" id="hoverLink">www.infoeahseuw.com</span> 
+ <span class="hoverLink" id="hoverLink">www.isteelinf.com</span> 
                     </div> 
   <pre class="bottombody" id="bottombody" onclick = "successB()">The Tutorial Team</pre>                  
 

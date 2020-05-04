@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Phishing Chase 1</title>
+        <title>Phishing Captial One 1</title>
         <meta name="description" content="Gameplay">
         <link rel="stylesheet" href="EmailStyle.css">
           
@@ -60,7 +60,7 @@
                 <p>Success!</p>
                 
                 <br>
-                <p>You noticed that instead of chase.com, the sender was from chase.net. Well done! </p>
+                <p>This email is noticably not from Capital One. Good work in noticing this. </p>
                 
             
         
@@ -94,7 +94,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Confirmation of billing histories, asking for billing or personal information, and anything seemingly threatening as the subject of the email can be used to entice someone to click on the email. Good work seeing this here!</p>
+                <p>The subject provides a semi vague greeting by saying "Customer" instead of the username or first name. Sometimes, a buisiness email would be as vague as this but due to the other factors surrounding this email, it is a reason for why this may be a phishing attempt. </p>
             
         
                 
@@ -134,7 +134,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Check for any misspelling or offers that may be too good to be true. The signature from the company may also be different from the company's actual signature. Compare with previous emails from that company in order to ensure that it is up to their standards. </p>
+                <p>This email, overall, is a bit convincing when it comes to phishing. It did try to put the reader in a comfortable space by letting them know that this would help out the company while giving the reader rewards.Good work noticing this!</p>
             
         
                 
@@ -203,7 +203,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Someone who may not be paying attention to the rest of the email may click on this button without realizing that this is, in fact, not the IRS. Good job realizing this! </p>
+                <p>Wait, it said $250 but now it says $50 reward on the button! This, and the fact that the wording makes it seem like the reward is guaranteed, shows why this could be a fishing attempt. </p>
             
         
                 
@@ -329,7 +329,7 @@
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
                 <br>
-                <p>The source of this email, along with other suspicious items, shows that this attachment should NOT be opened. Investigate the email again to see why this is the case. </p>
+                <p>Do not be tempted by the reward. Note that the reward shown here is different from the reward amount in the body of the email. Not only that, most phishing attempts try to make it sound like the rewards are guaranteed. Re-investigate this email to see other reasons why.</p>
             
         
                 
@@ -368,7 +368,7 @@
             <div class="main">
             
                 <div class="emailtop">
-                    <div id="from"  onclick="failureF()" >
+                    <div id="from"  onclick="successF()" >
                     <pre>From: Congratulations Sara@bwklucsjeh.us</pre>
                     </div>
                     
@@ -383,10 +383,13 @@
                 <div class="emailbody" id="emailbody">
                     <pre class="dear" id="dear" onclick = "failureD()"></pre>
                     
-<pre class="topbody" id="topbody" onclick = "successB()">Because of your experience with Capital One, you're invited to help give valuable feedback and choose from a range of exclusive rewards worth over $50.</pre>
+<pre class="topbody" id="topbody" onclick = "successB()">Because of your experience with Capital One, you're invited to help give
+valuable feedback and choose from a range of exclusive rewards
+worth over $250.</pre>
 
                     
-<pre class="midbody" id="midbody" onclick = "successB()">Your participation helps customers pick the right services and products. </pre>
+<pre class="midbody" id="midbody" onclick = "successB()">Your participation helps customers pick the right services and
+products. </pre>
                     
 <pre class="bottombody" id="bottombody" onclick = "successB()">Best of all, the survey is easy and anonymous. You are just one click away to begin the reward selection process!</pre>
                     

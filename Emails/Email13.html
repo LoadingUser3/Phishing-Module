@@ -5,39 +5,13 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Phishing Chase 1</title>
+        <title>Phishing Doctor 2</title>
         <meta name="description" content="Gameplay">
         <link rel="stylesheet" href="EmailStyle.css">
           
     </head>
     <body>
-        <!--Score-->
-        <!--
-        <div class="scoring" id="scoring">
-        <form>
-         <label for="score">Score (Debugging)</label>
-        <input type="number" id="score" name="score" step="1">
-        </form>
-        
-        
-        </div>
-        -->
-        <!--Sidebar-->
-        <!--
-            <div class="sidebar" id="toolbox">
-                <h3>Toolbox</h3>
-                <div class ="tools">
-                    
-                    <button class="detect" id="investigate" onclick = "modeChange()">Inspect</button>
-                    <button onclick="speak()">Talk</button>
-                    <button onclick="actions()">Action</button>
-                    <button class="close" onclick="closeTools()">Close</button>
-                </div>
-                
-            </div>
 
-        <span onclick="openTools()" style = "cursor:pointer; font-size:25px">&#9776;Open Tools</span>
-        -->
     <div id="Success Part">    
         <!--Success Prompt-->
         <div id="successPrompt" class="successPrompt">
@@ -60,7 +34,7 @@
                 <p>Success!</p>
                 
                 <br>
-                <p>You noticed that instead of chase.com, the sender was from chase.net. Well done! </p>
+                <p>This site, Lasuiting4uwinner, does not seem trustworthy at all. It tried to be clever with the name (Lawsuiting for you winner) but typically these end up being untrustworthy or fake urls. Good work seeing that it may be a sign of phishing. </p>
                 
             
         
@@ -94,7 +68,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Confirmation of billing histories, asking for billing or personal information, and anything seemingly threatening as the subject of the email can be used to entice someone to click on the email. Good work seeing this here!</p>
+                <p>This subject line is enticing to those who may think they are recieving free money, especially from a lawsuit. Good work in spotting this. </p>
             
         
                 
@@ -115,7 +89,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>A vague greeting such as "Dear Chase OnlineSM Customer" may be a big indicator of phishing, especially if it came from a big company such as a bank. Most of these big companies would address the reader by their first and last name. Good work noticing this!</p>
+                <p></p>
             
         
                 
@@ -134,7 +108,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Check for any misspelling or offers that may be too good to be true. The signature from the company may also be different from the company's actual signature. Compare with previous emails from that company in order to ensure that it is up to their standards. </p>
+                <p>This is a very broad spectrum of different types of cancer. It can easily trick someone into thinking they can recieve this compensation from this alleged "lawsuit". Who wouldn't want free money? Good work!</p>
             
         
                 
@@ -151,7 +125,7 @@
         <div id="successLink" class="successLink">
             <div class="successContent">
             
-             <p>Even though a link may state "View All Transactions", it doesn't mean it will lead to what it says. Hovering over these links and seeing their destination will always show the true location of the link. Good work seeing this!</p>
+             <p>When hovering over the link, you can see that it leads to a different site than the source of the email. Not only that, but the site it leads to is very untrustworthy domain. Good work noticing this!</p>
                 <br>
                 
             
@@ -253,7 +227,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Normally, a phishing attempt will have a very generic name here, such as Customer. Most companies would either use the full name of the reader or no name at all. In this case, it was not an indicator of a phishing attempt.</p>
+                <p></p>
                 
                 
         <!--Failure Close-->
@@ -297,7 +271,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>There may have been something that was missed while checking this email. Comb through it again to find out what it may have been!</p>
+                <p>There is something in this email that shows that it may be a phishing attempt. Search this email more to find it. </p>
                 
         <!--Failure Close-->
                 <button onclick="closeFPrompt()">Continue</button>
@@ -330,11 +304,11 @@
                     </div>
                     
                     <div id="subject" onclick = "successS()">
-                    <pre>Subject: Potential compensation for Vapor Lawsuit</pre>
+                    <pre>Subject: Potential compensation for Vapor rub Lawsuit</pre>
                     </div>
                 </div>
                 <div class="emailbody" id="emailbody">
-                    <pre class="dear" id="dear" onclick = "failureD()">Protag47</pre>
+                    <pre class="dear" id="dear" onclick = "failureD()"></pre>
                     
 <pre class="topbody" id="topbody" onclick = "successB()"> Have you or a loved one suffered from one of the below complications?</pre>
 

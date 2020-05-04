@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Phishing Chase 1</title>
+        <title>Phishing Gummies 1</title>
         <meta name="description" content="Gameplay">
         <link rel="stylesheet" href="EmailStyle.css">
           
@@ -60,7 +60,7 @@
                 <p>Success!</p>
                 
                 <br>
-                <p>You noticed that instead of chase.com, the sender was from chase.net. Well done! </p>
+                <p>The url may end in .us, but the rest of it does not seem trustworthy at all. Many companies would have a readable email instead of one that has a lot of random letters. Good work! </p>
                 
             
         
@@ -134,7 +134,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Check for any misspelling or offers that may be too good to be true. The signature from the company may also be different from the company's actual signature. Compare with previous emails from that company in order to ensure that it is up to their standards. </p>
+                <p>SOME PHISHING EMAILS REALLY LIKE TO YELL AT READERS AND COMMAND THEM TO DO SOMETHING BY WRITING IN ALL CAPS. THIS IS TO GAIN THE READER'S ATTENTION, BUT ALSO MAKES IT MORE OBVIOUS IT IS A PHISHING ATTEMPT RATHER THAN A LEGITAMITE EMAIL. GOOD JOB!!</p>
             
         
                 
@@ -151,7 +151,7 @@
         <div id="successLink" class="successLink">
             <div class="successContent">
             
-             <p>Even though a link may state "View All Transactions", it doesn't mean it will lead to what it says. Hovering over these links and seeing their destination will always show the true location of the link. Good work seeing this!</p>
+             <p>What pain are you stopping with these gummies? This email and link are not very clear about that. The URL also utilizes Bitly to shorten the URL and to hide the site from the reader. Good job spotting this!</p>
                 <br>
                 
             
@@ -260,7 +260,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>While a "transaction confirmation" may seem a bit suspicious, some companies do inform the customer when a transaction seems suspicious. In this case, the subject was not the reason why this email can be considered a phishing attempt.</p>
+                <p>Getting news about gummies isn't really that suspicious. Had it said URGENT or tried to use wording that catches a reader's attention, it may have been considered suspicious. Otherwise, this is not a reason why this email may be a phishing attempt.</p>
                 
                 
         <!--Failure Close-->
@@ -316,7 +316,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>There may have been something that was missed while checking this email. Comb through it again to find out what it may have been!</p>
+                <p>There was definitely something suspicious about this email. Try to check the hyperling of the CBD or the way the email was worded. </p>
                 
         <!--Failure Close-->
                 <button onclick="closeFPrompt()">Continue</button>
@@ -368,7 +368,7 @@
             <div class="main">
             
                 <div class="emailtop">
-                    <div id="from"  onclick="failureF()" >
+                    <div id="from"  onclick="successF()" >
                     <pre>From: CBD For Familes@oefklaek.us</pre>
                     </div>
                     
@@ -376,7 +376,7 @@
                     <pre>To: Protag47@email.com</pre>
                     </div>
                     
-                    <div id="subject" onclick = "successS()">
+                    <div id="subject" onclick = "failureS()">
                     <pre>Subject: Medical News: CBD Gummies</pre>
                     </div>
                 </div>

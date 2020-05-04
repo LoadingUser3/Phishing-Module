@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Phishing Chase 1</title>
+        <title>Phishing Costco 1</title>
         <meta name="description" content="Gameplay">
         <link rel="stylesheet" href="EmailStyle.css">
           
@@ -60,7 +60,7 @@
                 <p>Success!</p>
                 
                 <br>
-                <p>You noticed that instead of chase.com, the sender was from chase.net. Well done! </p>
+                <p>Email sources that have random numbers and letters or an odd name (Congratulations Sara), it is highly likely that these emails are from bots. This email most likely works from a template and mass sends the emails to various inboxes. Good work!</p>
                 
             
         
@@ -94,7 +94,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Confirmation of billing histories, asking for billing or personal information, and anything seemingly threatening as the subject of the email can be used to entice someone to click on the email. Good work seeing this here!</p>
+                <p>This subject is trying to tempt the reader with a possible prize by saying congratulations, causing some readers to open it just to see what they won. Due to this, this can be considered suspicious for phishing. </p>
             
         
                 
@@ -134,8 +134,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Check for any misspelling or offers that may be too good to be true. The signature from the company may also be different from the company's actual signature. Compare with previous emails from that company in order to ensure that it is up to their standards. </p>
-            
+                <p></p>
         
                 
                 
@@ -151,7 +150,7 @@
         <div id="successLink" class="successLink">
             <div class="successContent">
             
-             <p>Even though a link may state "View All Transactions", it doesn't mean it will lead to what it says. Hovering over these links and seeing their destination will always show the true location of the link. Good work seeing this!</p>
+             <p>Hovering over this link shows that the link leads to a very untrustworthy site. It is a bit unreadable what the site leads to. It uses the Bitly URL shortener to diguise the site that it is actually going to. God work finding this!</p>
                 <br>
                 
             
@@ -264,7 +263,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Carefully reading the body of an email can immediately show that it is a phishing attempt if there are any misspellings or if it asks for personal information. Most companies would not ask for any personal information via email. In this case, the body of the email was not an indicator of a phishing attempt. </p>
+                <p>This specifically isn't what makes it a phishing email, as there are some buisnesses that do send surveys through newsletters with a reward at the end of it to entice customers to actually take the survey. Due to this, this is not a suspicious part of the email.  </p>
                 
                 
         <!--Failure Close-->
@@ -321,7 +320,7 @@
             <div class="main">
             
                 <div class="emailtop">
-                    <div id="from"  onclick="failureF()" >
+                    <div id="from"  onclick="successF()" >
                     <pre>From: Congratulations Sara@bwklucsjeh.us</pre>
                     </div>
                     
@@ -336,10 +335,10 @@
                 <div class="emailbody" id="emailbody">
                     <pre class="dear" id="dear" onclick = "failureD()"></pre>
                     
-<pre class="topbody" id="topbody" onclick = "successB()">Congrats! You've been selected to participate in our monthly Costco Customer Promotion!</pre>
+<pre class="topbody" id="topbody" onclick = "failureB()">Congrats! You've been selected to participate in our monthly Costco Customer Promotion!</pre>
 
                     
-<pre class="midbody" id="midbody" onclick = "successB()">Take this 30-second survey about Costco and we'll offer you exclusive rewards over $50! </pre>
+<pre class="midbody" id="midbody" onclick = "failureB()">Take this 30-second survey about Costco and we'll offer you exclusive rewards over $50! </pre>
                     
 <pre class="bottombody" id="bottombody" onclick = "successB()"></pre>
                     

@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Phishing Chase 1</title>
+        <title>Phishing Doctor 1</title>
         <meta name="description" content="Gameplay">
         <link rel="stylesheet" href="EmailStyle.css">
           
@@ -60,7 +60,7 @@
                 <p>Success!</p>
                 
                 <br>
-                <p>You noticed that instead of chase.com, the sender was from chase.net. Well done! </p>
+                <p>Hospital? Which hospital? Is it your hospital? Do you know a Dr. Zeil? These are questions to ask when investigating the source of the email. Hospitals would typically call their patients if they have news to share about diagnosis. </p>
                 
             
         
@@ -134,7 +134,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Check for any misspelling or offers that may be too good to be true. The signature from the company may also be different from the company's actual signature. Compare with previous emails from that company in order to ensure that it is up to their standards. </p>
+                <p>This email is trying to capitalize on a chance that the reader has gotten a recent checkup to the doctor. However, it shows its phishing fangs by asking for very personal information. Hospitals would not ask this over the phone or emails. Good work! </p>
             
         
                 
@@ -260,7 +260,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>While a "transaction confirmation" may seem a bit suspicious, some companies do inform the customer when a transaction seems suspicious. In this case, the subject was not the reason why this email can be considered a phishing attempt.</p>
+                <p>This subject isn't really suspicious nor does it really prompt a reader to go to this email (unless they were expecting a report). Diagnosis Reports could be about anything. Therefore, this subject isn't a reason this could be a phishing attempt. </p>
                 
                 
         <!--Failure Close-->
@@ -272,7 +272,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Normally, a phishing attempt will have a very generic name here, such as Customer. Most companies would either use the full name of the reader or no name at all. In this case, it was not an indicator of a phishing attempt.</p>
+                <p>There is nothing wrong with a simple hello in an email. This wouldn't be a reason why this is a phishing attempt. </p>
                 
                 
         <!--Failure Close-->
@@ -283,7 +283,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Carefully reading the body of an email can immediately show that it is a phishing attempt if there are any misspellings or if it asks for personal information. Most companies would not ask for any personal information via email. In this case, the body of the email was not an indicator of a phishing attempt. </p>
+                <p>This particular part of the body of the email does not have anything suspicious about it. There is something else in this email that may show that this may or may not be a phishing attempt. </p>
                 
                 
         <!--Failure Close-->
@@ -369,7 +369,7 @@
             
                 <div class="emailtop">
                     <div id="from"  onclick="successF()" >
-                    <pre>From: Hospital(dr.zeil@onmicrosoft.com)</pre>
+                    <pre>From: Hospital(dr.zeilv@onmicrosoft.com)</pre>
                     </div>
                     
                     <div id="to" onclick="failureT()">
@@ -390,7 +390,7 @@ provide for you.</pre>
 <pre class="midbody" id="midbody" onclick = "successB()">We would like to send you the report but we will need to confirm your
 identity. Please provide your identity by replying to this email. You will need to give your full name, address, social security, and your ID number from the healthcare provider you most recently used.  </pre>
                     
-<pre class="bottombody" id="bottombody" onclick = "successB()"> Please respond as soon as you are able to. 
+<pre class="bottombody" id="bottombody" onclick = "failureB()"> Please respond as soon as you are able to. 
 
 Thank you.</pre>
                     

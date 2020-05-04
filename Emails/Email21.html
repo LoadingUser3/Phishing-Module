@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Phishing Chase 1</title>
+        <title>Phishing Military</title>
         <meta name="description" content="Gameplay">
         <link rel="stylesheet" href="EmailStyle.css">
           
@@ -108,7 +108,7 @@
             
                 <p>Success!</p>
                 <br>
-                <p>Check for any misspelling or offers that may be too good to be true. The signature from the company may also be different from the company's actual signature. Compare with previous emails from that company in order to ensure that it is up to their standards. </p>
+                <p>This paragraph in particular had a few misspellings and grammatical mistakes. If it wasn't for this paragraph having these mistakes, this email would have been a very convincing phishing attempt. This just goes to show how careful we must be when dectecting a phishing email. Good work seeing this! </p>
             
         
                 
@@ -212,7 +212,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Often enough, one of the simplest ways to see if the email was a phishing attempt is to check whether it is from a reliable source. Any discrepencies can indicate that it is a phishing attempt. In this case, the sender was from a reliable source. </p>
+                <p>There is nothing really suspicious about this sender. The .mil is actually the email address for members of the US military. Keep looking to find out what the suspicious item may be. </p>
                 
                 
         <!--Failure Close-->
@@ -234,7 +234,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>While a "transaction confirmation" may seem a bit suspicious, some companies do inform the customer when a transaction seems suspicious. In this case, the subject was not the reason why this email can be considered a phishing attempt.</p>
+                <p>There is nothing to suspect in this subject line. Financial Assistance or Job Placement email are not that odd to recieve. Keep searching for what may cause this email to be a phishing email.</p>
                 
                 
         <!--Failure Close-->
@@ -246,7 +246,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Normally, a phishing attempt will have a very generic name here, such as Customer. Most companies would either use the full name of the reader or no name at all. In this case, it was not an indicator of a phishing attempt.</p>
+                <p>While it is a bit odd to have something be labeled CLASSIFCATION UNCLASSIFIED, it isn't the reason why this email may be a phishing attempt. Keep searching for the suspicious item. </p>
                 
                 
         <!--Failure Close-->
@@ -257,7 +257,7 @@
             <div class="failureContent">
                 <img src="FishEx.png">
                 <p id="hack" class="hack"></p>
-                <p>Carefully reading the body of an email can immediately show that it is a phishing attempt if there are any misspellings or if it asks for personal information. Most companies would not ask for any personal information via email. In this case, the body of the email was not an indicator of a phishing attempt. </p>
+                <p>There is nothing suspicious about this part of the email. There are no spelling mistakes nor any grammar mistakes. Keep searching for the part of the email that make it a phishing attempt. </p>
                 
                 
         <!--Failure Close-->
@@ -342,7 +342,7 @@
             <div class="main">
             
                 <div class="emailtop">
-                    <div id="from"  onclick="successF()" >
+                    <div id="from"  onclick="failureF()" >
                     <pre>From: sven.ortin2.mil@mail.mil</pre>
                     </div>
                     
@@ -351,16 +351,27 @@
                     </div>
                     
                     <div id="subject" onclick = "failureS()">
-                    <pre>Subject: Financial Assistance/ Job Placement (UNCLASSIFIED)</pre>
+                    <pre>Subject: Financial Assistance/ Job Placement</pre>
                     </div>
                 </div>
                 <div class="emailbody" id="emailbody">
                     <pre class="dear" id="dear" onclick = "failureD()">CLASSIFICATION : UNCLASSIFIED</pre>
                     
-<pre class="topbody" id="topbody" onclick = "successB()">The National Guard has create a path specifically for you to obtain your degree and remain debt free. We ofer 100% free tuition for your entire undergraduate degree, up to $1,000 a month in your pocket each month, job experience in your degree field, and much more, all for working just 1 weekend a month and 2 weeks in summer. </pre>
+<pre class="topbody" id="topbody" onclick = "failureB()">The National Guard has create a path specifically for you to obtain
+your degree and remain debt free. We ofer 100% free tuition for
+your entire undergraduate degree, up to $1,000 a month in your
+pocket each month, job experience in your degree field, and much
+more, all for working just 1 weekend a month and 2 weeks in
+summer. </pre>
 
                     
-<pre class="midbody" id="midbody" onclick = "successB()">If you are in financial hardship, or just want some extra cash and job experience I stroingly recommend you reply to this e-mail with your name, a phone number, and preferred day for an appointment. Our appointments held on Monday, Tuesdays and Wednesdays of each week at 2pm (accept Federal Holidays). Our collegiate team will help put you on a path that gets you your degree while putting money in your pocket. </pre>
+<pre class="midbody" id="midbody" onclick = "successB()">If you are in financial hardship, or just want some extra cash and job
+experience I stroingly recommend you reply to this e-mail with
+your name, a phone number, and preferred day for an appointment.
+Our appointments held on Monday, Tuesdays and Wednesdays of each
+week at 2pm (accept Federal Holidays). Our collegiate team will
+help put you on a path that gets you your degree while putting
+money in your pocket. </pre>
                     
 <pre class="bottombody" id="bottombody" onclick = "failureB()">We hope to hear from you soon!
 
