@@ -67,10 +67,10 @@
                 
                 
         <!--Success Close-->
-                <button><a href = "Email4.html">Continue to next email</a></button>
-                <!--
-                <button onclick="closeSPrompt()">Continue</button>
-                -->
+               
+                
+                <button class="promptButton" onclick="randPage()">Continue</button>
+                
          
             </div>
         </div>
@@ -84,7 +84,7 @@
                 
                 
         <!--Success Close-->
-                <button onclick="closeSPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeSPrompt()">Continue</button>
          
             </div>
         </div>
@@ -100,7 +100,7 @@
                 
                 
         <!--Success Close-->
-                <button onclick = "randPage()"><p>Continue to next email</p></button>
+                <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
                 <button onclick="closeSPrompt()">Continue</button>
                 -->
@@ -118,7 +118,7 @@
                 
                 
         <!--Success Close-->
-                 <button onclick = "randPage()"><p>Continue to next email</p></button>
+                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
                 <button onclick="closeSPrompt()">Continue</button>
                 -->
@@ -137,7 +137,7 @@
                 
                 
         <!--Success Close-->
-                 <button onclick = "randPage()"><p>Continue to next email</p></button>
+                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
                 <button onclick="closeSPrompt()">Continue</button>
                 -->
@@ -154,7 +154,7 @@
                 
                 
         <!--Success Close-->
-                <button onclick="closeSPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeSPrompt()">Continue</button>
          
             </div>
         </div>
@@ -169,7 +169,7 @@
                 
                 
         <!--Success Close-->
-                 <button onclick = "randPage()"><p>Continue to next email</p></button>
+                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
                 <button onclick="closeSPrompt()">Continue</button>
                 -->
@@ -188,7 +188,7 @@
                 
                 
         <!--Success Close-->
-                 <button onclick = "randPage()"><p>Continue to next email</p></button>
+                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
                 <button onclick="closeSPrompt()">Continue</button>
                 -->
@@ -209,7 +209,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          
@@ -221,7 +221,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureTo" class="failureTo">
@@ -232,7 +232,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureSubject" class="failureSubject">
@@ -243,7 +243,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          
@@ -255,7 +255,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureBody" class="failureBody">
@@ -266,7 +266,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureLink" class="failureLink">
@@ -277,7 +277,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureAttach" class="failureAttach">
@@ -288,7 +288,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureNothing" class="failureNothing">
@@ -298,7 +298,7 @@
                 <p>There may have been something that was missed while checking this email. Keep investigating to find out what it may have been!</p>
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
     </div> 
@@ -319,30 +319,30 @@
             
                 <div class="emailtop">
                     <div id="from"  onclick="failureF()" >
-                    <pre>From: chase.com</pre>
+                    <p>From: chase.com</p>
                     </div>
                     
                     <div id="to" onclick="failureT()">
-                    <pre>To: Protag47@email.com</pre>
+                    <p>To: Protag47@email.com</p>
                     </div>
                     
                     <div id="subject" onclick = "failureS()">
-                    <pre>Subject: Your Password Was Changed Successfully</pre>
+                    <p>Subject: Your Password Was Changed Successfully</p>
                     </div>
                 </div>
                 <div class="emailbody" id="emailbody">
-                    <pre class="dear" id="dear" onclick = "failureD()"></pre>
+                    <p class="dear" id="dear" onclick = "failureD()"></p>
                     
-<pre class="topbody" id="topbody" onclick = "failureB()">This is a confirmation that the password associated with your Chase.com account, 
-PROTAG47, was successfully changed</pre>
+<p class="topbody" id="topbody" onclick = "failureB()">This is a confirmation that the password associated with your Chase.com account, 
+PROTAG47, was successfully changed</p>
  
                   
 <a class="link" id="link" href title = "www.chase.net"  onclick = "successLink()"></a>
 
                     
-<pre class="midbody" id="midbody" onclick = "failureB()">If this was changed without your knowledge, please contact our support team. </pre>
+<p class="midbody" id="midbody" onclick = "failureB()">If this was changed without your knowledge, please contact our support team. </p>
                     
-<pre class="bottombody" id="bottombody" onclick = "failureB()">© 2020 JPMorgan Chase & Co</pre>
+<p class="bottombody" id="bottombody" onclick = "failureB()">© 2020 JPMorgan Chase & Co</p>
                     
             
                     

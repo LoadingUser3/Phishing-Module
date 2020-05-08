@@ -8,6 +8,7 @@
         <title>Phishing Amazon Reset Email</title>
         <meta name="description" content="Gameplay">
         <link rel="stylesheet" href="EmailStyle.css">
+       
           
     </head>
     <body>
@@ -198,7 +199,7 @@
         </div>
         
 </div>
-     <div id="Failing Part">  
+     <div id="Failing Part" onload="typeAnim()">  
         <!--Failure Prompt-->
         <div id="failurePrompt" class="failurePrompt">
             <div class="failureContent">
@@ -226,7 +227,7 @@
          <div id="failureTo" class="failureTo">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack"></p>
                 <p>At the moment, there is no way to detect whether the "To" section of an email can be used for phishing, as it is directed towards a specific email. Therefore, this choice would always be incorrect. </p>
                 
                 
@@ -346,22 +347,22 @@
             
                 <div class="emailtop">
                     <div id="from"  onclick="successF()" >
-                    <pre>From: nooreply@amazn.com</pre>
+                    <p>From: nooreply@amazn.com</p>
                     </div>
                     
-                    <div id="to" onclick="failureT()">
-                    <pre>To: Protag47@email.com</pre>
+                    <div id="to" onclick="failureT()" onclick ="typeAnim()">
+                    <p>To: Protag47@email.com</p>
                     </div>
                     
                     <div id="subject" onclick = "successS()">
-                    <pre>Subject: Reset Password</pre>
+                    <p>Subject: Reset Password</p>
                     </div>
                 </div>
 
                 <div class="emailbody" id="emailbody">
-                    <pre class="dear" id="dear" onclick = "failureD()">Hello Protag47,</pre>
+                    <p class="dear" id="dear" onclick = "failureD()">Hello Protag47,</p>
                     
-<pre class="topbody" id="topbody" onclick = "successB()">Your account will be deleted from the Amazon database if you do not reset your password in 2 days.</pre>
+<p class="topbody" id="topbody" onclick = "successB()">Your account will be deleted from the Amazon database if you do not reset your password in 2 days.</p>
  
 <div class="links" id="links" onclick = "successL()">                
 
@@ -371,21 +372,15 @@
     
                     </div>
                     
-<pre class="midbody" id="midbody" onclick = "failureB()">-Amazon Customer Services</pre>
+<p class="midbody" id="midbody" onclick = "failureB()">&copy; Amazon Customer Services</p>
                     
-<pre class="bottombody" id="bottombody" onclick = "failureB()"></pre>
-                    
-             <!--       
-            <button onclick="buttonConfirm()">Get Your Free Evaluation Now</button>
-                 -->   
-            
-                    
-        
+<p class="bottombody" id="bottombody" onclick = "failureB()"></p>
+
                 </div>
                 <br>
                 <br>
-                <div class = "typer" id="typer" >
-                <p id="hacked"></p>
+                <div class = "hack" id="hack" >
+                
                 </div>
                 
                 
@@ -399,9 +394,30 @@
     <audio id ="audioSuccess" src="Success.wav"></audio>
     <audio id ="audioFailure" src="Fail.wav"></audio>
     </div>
+<p id="hack"></p>       
+<script>
+var ty=0;
+var txtW = 'HACK DETECTED! HACK DETECTED!';
+var speed = 50;
+    function typeAnim() {
+
+    //Animation for typing
+    
+    if (ty < txtW.length) {
+        document.getElementById("hack").innerHTML += txtW.charAt(ty);
+        ty++;
+        setTimeout(typeAnim,speed);
+    }
+}
+        typeAnim();
+        </script>
+<script src="Emailscripts.js">
+
+        </script>
         
         
-<script src="Emailscripts.js"></script>
+        
+
     </body>
 
 </html>

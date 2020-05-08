@@ -69,7 +69,7 @@
                 
         <!--Success Close-->
                 
-                <button onclick = "randPage()"><p>Continue to next email</p></button>
+                <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 
                 
                 <!--<button><a href = "Email3.html">Continue to next email</a></button>
@@ -89,7 +89,7 @@
                 
                 
         <!--Success Close-->
-                <button onclick="closeSPrompt()">Continue</button>
+                <button class="promptButton"  onclick="closeSPrompt()">Continue</button>
          
             </div>
         </div>
@@ -105,7 +105,7 @@
                 
                 
         <!--Success Close-->
-                <button onclick = "randPage()"><p>Continue to next email</p></button>
+                <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
                 <button onclick="closeSPrompt()">Continue</button>
                 -->
@@ -123,7 +123,7 @@
                 
                 
         <!--Success Close-->
-                <button onclick = "randPage()"><p>Continue to next email</p></button>
+                <button class="promptButton"  onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
                 <button onclick="closeSPrompt()">Continue</button>
                 -->
@@ -141,7 +141,7 @@
                 
                 
         <!--Success Close-->
-                <button onclick = "randPage()"><p>Continue to next email</p></button>
+                <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
                 <button onclick="closeSPrompt()">Continue</button>
                 -->
@@ -157,7 +157,7 @@
                 
                 
         <!--Success Close-->
-                <button onclick="closeSPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeSPrompt()">Continue</button>
          
             </div>
         </div>
@@ -173,7 +173,7 @@
                 
                 
         <!--Success Close-->
-                <button onclick = "randPage()"><p>Continue to next email</p></button>
+                <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
                 <button onclick="closeSPrompt()">Continue</button>
                 -->
@@ -191,7 +191,7 @@
                 
                 
         <!--Success Close-->
-                <button onclick = "randPage()"><p>Continue to next email</p></button>
+                <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
                 <button onclick="closeSPrompt()">Continue</button>
                 -->
@@ -211,7 +211,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          
@@ -223,7 +223,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureTo" class="failureTo">
@@ -234,7 +234,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureSubject" class="failureSubject">
@@ -245,7 +245,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          
@@ -257,7 +257,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureBody" class="failureBody">
@@ -268,7 +268,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureLink" class="failureLink">
@@ -279,7 +279,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureAttach" class="failureAttach">
@@ -290,7 +290,7 @@
                 
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
          <div id="failureNothing" class="failureNothing">
@@ -300,7 +300,7 @@
                 <p>There may have been something that was missed while checking this email. Keep investigating to find out what it may have been!</p>
                 
         <!--Failure Close-->
-                <button onclick="closeFPrompt()">Continue</button>
+                <button class="promptButton" onclick="closeFPrompt()">Continue</button>
             </div>
         </div>
     </div> 
@@ -321,15 +321,15 @@
             
                 <div class="emailtop">
                     <div id="from"  onclick="successF()" >
-                    <pre>From: Liam@fin.mail.com</pre>
+                    <p>From: Liam@fin.mail.com</p>
                     </div>
                     
                     <div id="to" onclick="failureT()">
-                    <pre>To: Protag47@email.com</pre>
+                    <p>To: Protag47@email.com</p>
                     </div>
                     
                     <div id="subject" onclick = "successS()">
-                    <pre>Subject: ATTENTION PLEASE!!!!</pre>
+                    <p>Subject: ATTENTION PLEASE!!!!</p>
                     </div>
                     
                 </div>
@@ -338,22 +338,23 @@
                 <button id="emailAt" class="emailAt" onclick="attachConfirm()"> Letter.doc</button>
                 </div>
                 <div class="emailbody" id="emailbody">
-                    <pre class="dear" id="dear" onclick = "successD()">Dear Trusted Inheritor</pre>
+                    <p class="dear" id="dear" onclick = "successD()">Dear Trusted Inheritor</p>
                     
-<pre class="topbody" id="topbody" onclick = "successB()">My name is Liam Stannard of the finacial branch of a commercial bank in Pennsylvania. 
+<p class="topbody" id="topbody" onclick = "successB()">My name is Liam Stannard of the finacial branch of a commercial bank in Pennsylvania. 
 Our records indiate that you were listed as an heir to a <b>$6.8 million dollar inheritance</b>
-from a currently deseased relative.</pre>
+from a currently deseased relative.</p>
                         
 
 <a class="link" id="link" href title = "www.chase.net"  onclick = "successLink()"></a>
                 
-<pre class="midbody" id="midbody" onclick = "successB()">If you are interested, please send us an acceptance reply with your name, number, and 
-address. We will send more forms to fill out once we recieve your acceptance. </pre>
+<p class="midbody" id="midbody" onclick = "successB()">If you are interested, please send us an acceptance reply with your name, number, and 
+address. We will send more forms to fill out once we recieve your acceptance. </p>
                       
-<pre class="bottombody" id="bottombody" onclick = "successB()">We look forward to hearing from you.
-
+<p class="bottombody" id="bottombody" onclick = "successB()">We look forward to hearing from you.
+<br>
 Liam Stannard
-Pennsylvania Bank</pre>
+    <br>
+Pennsylvania Bank</p>
                      
             
                     
