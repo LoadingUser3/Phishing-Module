@@ -1,5 +1,6 @@
 /*Stylesheet for Emails
 By Jerfyn Rosario*/
+/*Used for Index page testing - no need for this in full game*/
 
 .startPage {
     background-color: cornsilk;
@@ -9,6 +10,7 @@ By Jerfyn Rosario*/
     
 }
 
+/*Used for Index page testing - no need for this in full game*/
 .startPage button {
     margin-left:450px;
     text-align: center;
@@ -21,50 +23,46 @@ By Jerfyn Rosario*/
     cursor: pointer;   
 }
 
-
-
+/*Where the email from, to, subject, and body is located*/
 .main{
     background-color: cornsilk;
-    /*margin-left: 160px;*/
-    padding: 0px 10px;
-    
-    
+    padding: 5px 10px;
+    width: 50%;
+    margin: auto;
 }
 
+/*Hover over highlights for ahref elements*/
 a:hover {
     background-color: yellow;
     cursor: pointer;
 }
 
+/*Hover over highlights for pre elements*/
 pre:hover{
     background-color: yellow;
     cursor: pointer;
 }
 
+.main p:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+/*Hover over highlights for elements with the link class*/
 .links:hover{
     background-color: yellow;
     cursor: pointer;
 }
 
-.emailAttach button{
-    background-color: lightgray;
-    border: 2px black;
-    color:black;
-    padding: 10px 20px;
-    display:block;
-    width: 10%;
-    cursor: pointer;
-}
-
-
-
+/*To make the false links class look like hyperlinks (Prevents the purple outline and easier to open prompts this way)*/
 .links {
     position: relative;
-    text-decoration: underline;
+    
     text-decoration-color: blue;
     color: blue;
 }
 
+/*These are floating texts on the hyperlinks that will stay hidden until it is hovered over*/
 .links .hoverLink {
     visibility: hidden;
     width: 200px;
@@ -73,44 +71,22 @@ pre:hover{
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    
     position: absolute;
     z-index: 1;
     bottom: 100%;
     left: 50%;
-    margin-left: -510px;
+    margin-left:-200px;
+    overflow: hidden;
     
 }
 
+/*Shows the floating url of where links will lead*/
 .links:hover .hoverLink {
     visibility: visible;
 }
 
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: azure;
-    overflow-x: hidden;
-    padding-top: 15px;
-    text-align: center;
-    transition: 0.5s;
-}
-
-.sidebar button{
-    background-color: darkturquoise;
-    border: 2px solid black;
-    color:black;
-    padding: 10px 20px;
-    display:block;
-    width: 100%;
-    cursor: pointer;
-}
-.NothingButton button {
-    margin-left: 200px;
+.promptButton{
+    margin: auto;
     text-align: center;
     background-color: orange;
     border: 2px solid black;
@@ -121,20 +97,107 @@ pre:hover{
     cursor: pointer;
 }
 
-/*Sidebar (no longer in use)*/
-
-.sidebar:not(:last-child){
-    border-bottom: none;
+.successContent button {
+    margin: auto;
+    text-align: center;
+    background-color: orange;
+    border: 2px solid black;
+    color:black;
+    padding: 10px 20px;
+    display:block;
+    width: 25%;
+    cursor: pointer;
+    
 }
 
-.sidebar button:hover{
-    background-color: aquamarine;
+.failureContent button {
+    margin: auto;
+    text-align: center;
+    background-color: orange;
+    border: 2px solid black;
+    color:black;
+    padding: 10px 20px;
+    display:block;
+    width: 25%;
+    cursor: pointer;
+    
 }
 
-/*Score (no longer in use)*/
-.scoring {
-    text-align: right;
+.atConfirmContent button {
+    margin: auto;
+    text-align: center;
+    background-color: orange;
+    border: 2px solid black;
+    color:black;
+    padding: 10px 20px;
+    display:block;
+    width: 25%;
+    cursor: pointer;
 }
+
+/*Details for the "attachments" in the email*/
+.emailAttach button {
+    background-color: lightgray;
+    border: 2px black;
+    font-size: 13px;
+    font-weight: 500;
+    color:black;
+    padding: 10px 20px;
+    display:block;
+    cursor: pointer;
+    
+}
+
+/*Button that appears inside the email*/
+.innerButton {
+    margin: auto;
+    text-align: center;
+    background-color: aliceblue;
+    border: 2px solid lightblue;
+    color:black;
+    padding: 10px 20px;
+    width: 25%;
+    cursor: pointer;
+    border-radius: 13px;
+    font-weight: 500;
+    display: block; 
+    
+}
+
+/*Submit button class styling*/
+.SubmitButton button{
+    margin: auto;
+    text-align: center;
+    background-color: orange;
+    border: 2px solid black;
+    color:black;
+    padding: 10px 20px;
+    display:block;
+    width: 50%;
+    cursor: pointer;
+}
+
+/*Nothing button class styling*/
+.NothingButton button {
+    margin:auto;
+    text-align: center;
+    background-color: orange;
+    border: 2px solid black;
+    color:black;
+    padding: 10px 20px;
+    display:block;
+    width: 25%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.NothingButton button:hover {
+    background-color: darkorange;
+    color: white;
+}
+
 
 /*Highlight*/
 
@@ -146,6 +209,7 @@ pre:hover{
     background-color: none;
 }
 
+/*Prompt styling for the Attachment Confirmed prompt*/
 .atConfirm {
   display: none; 
   position: fixed; 
@@ -160,6 +224,7 @@ pre:hover{
   background-color: rgba(0,0,0,0.4); 
 }
 
+/*Content for the prompt*/
 .atConfirmContent {
   background-color: #fefefe;
   margin: auto;
@@ -169,6 +234,7 @@ pre:hover{
   text-align: center;
 }
 
+/*Prompt styling for the Button Confirmed prompt*/
 .buConfirm {
   display: none; 
   position: fixed; 
@@ -183,6 +249,7 @@ pre:hover{
   background-color: rgba(0,0,0,0.4); 
 }
 
+/*Content for the prompt*/
 .buConfirmContent {
   background-color: #fefefe;
   margin: auto;
@@ -191,8 +258,8 @@ pre:hover{
   width: 80%;
   text-align: center;
 }
-/*Success*/
 
+/*Success Prompt Styling*/
 .successPrompt {
   display: none; 
   position: fixed; 
@@ -335,10 +402,9 @@ pre:hover{
   background-color: rgba(0,0,0,0.4); 
 }
 
-
 .successContent {
     
-  background-color: #fefefe;
+  background-color: palegreen;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -346,7 +412,7 @@ pre:hover{
   text-align: center;
 }
 
-/*Failure*/
+/*Failure prompt styling*/
 
 .failurePrompt {
   display: none; 
@@ -488,8 +554,6 @@ pre:hover{
   background-color: rgba(0,0,0,0.4); 
 }
 
-
-
 .failureContent {
   background-color: lightcoral;
   margin: auto;
@@ -513,4 +577,17 @@ pre:hover{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/*Feature test*/
+.RTWButton button {
+    margin-left: 200px;
+    text-align: center;
+    background-color: orange;
+    border: 2px solid black;
+    color:black;
+    padding: 10px 20px;
+    display:block;
+    width: 25%;
+    cursor: pointer;
 }
