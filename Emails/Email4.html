@@ -43,13 +43,13 @@
         <div id="successPrompt" class="successPrompt">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
             
         
                 
                 
         <!--Success Close-->
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
          
             </div>
         </div>
@@ -57,7 +57,7 @@
          <div id="successFrom" class="successFrom">
             <div class="successContent">
                 
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 
                 <br>
                 <p>GooddDeals.org did not seem reliable, especially since the name of the sender is a bit misspelled. Good job catching that!</p>
@@ -69,7 +69,7 @@
         <!--Success Close-->
                  <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -92,7 +92,7 @@
         <div id="successSubject" class="successSubject">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>"Won what?" is usually the question these type of emails try to make the reader ask to open this email. Nice job spotting this!  </p>
             
@@ -102,7 +102,7 @@
         <!--Success Close-->
                  <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -111,7 +111,7 @@
         <div id="successDear" class="successDear">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>"Prizewinner" is a very vague greeting for any email. When the greeting of an email seems too general, it may be a phising attempt. Good job noticing this!</p>
             
@@ -121,7 +121,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -130,7 +130,7 @@
         <div id="successBody" class="successBody">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>Some questions that should be asked when reading this body are "Did I sign up for a raffle?" "What is this raffle?" "Who created this raffle?" These may have been some of the questions you have asked as well, and thus realized that this may have been a phishing attempt.  </p>
             
@@ -140,7 +140,7 @@
         <!--Success Close-->
                  <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -163,7 +163,7 @@
                 <div id="successAttach" class="successAttach">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>It is more common to see attachments being used in spear phishing attempts than in normal phishing attempts. Even so, attachments in emails should always come from a reliable source. </p>
             
@@ -173,7 +173,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -182,7 +182,7 @@
                 <div id="successNothing" class="successNothing">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>Not every email is a phishing email. Sometimes, there may be some false flags about the email that would be misinterpreted by the reader. </p>
             
@@ -192,7 +192,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -206,7 +206,7 @@
         <div id="failurePrompt" class="failurePrompt">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 
                 
                 
@@ -218,7 +218,7 @@
          <div id="failureFrom" class="failureFrom">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Often enough, one of the simplest ways to see if the email was a phishing attempt is to check whether it is from a reliable source. Any discrepencies can indicate that it is a phishing attempt. In this case, the sender was from a reliable source. </p>
                 
                 
@@ -229,7 +229,7 @@
          <div id="failureTo" class="failureTo">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>At the moment, there is no way to detect whether the "To" section of an email can be used for phishing, as it is directed towards a specific email. Therefore, this choice would always be incorrect. </p>
                 
                 
@@ -240,7 +240,7 @@
          <div id="failureSubject" class="failureSubject">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Typically, the subject may contain threatening or very urgent vocublary to inistil fear on the reader. In this case, the subject was not the reason why this email can be considered a phishing attempt. </p>
                 
                 
@@ -252,7 +252,7 @@
          <div id="failureDear" class="failureDear">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Normally, a phishing attempt will have a very generic name here, such as Customer. Most companies would either use the full name of the reader or no name at all. In this case, it was not an indicator of a phishing attempt.</p>
                 
                 
@@ -263,7 +263,7 @@
          <div id="failureBody" class="failureBody">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Carefully reading the body of an email can immediately show that it is a phishing attempt if there are any misspellings or if it asks for personal information. Most companies would not ask for any personal information via email. In this case, the body of the email was not an indicator of a phishing attempt. </p>
                 
                 
@@ -274,7 +274,7 @@
          <div id="failureLink" class="failureLink">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Links are often used to steal information from potential victims. Phishers would try to recreate a form on a site that is meant to steal information. Hovering over the link to check where the hyperlink leads without clicking on it can show whether or not it is going to a reliable site. In this case, this is a reliable site.</p>
                 
                 
@@ -285,7 +285,7 @@
          <div id="failureAttach" class="failureAttach">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Never open an attachment UNLESS it is from a reliable source. Attachments that are carelessly opened can  not only lead to information from the targeted employee to be stolen but also viruses and other methods of information stealing being put onto the computer. </p>
                 
                 
@@ -296,7 +296,7 @@
          <div id="failureNothing" class="failureNothing">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>This email was very vague in many places. Whenever an email is too vague, leaving you with questions that you are tempted to ask, it is possible that it may be a phishing attempt. Try checking certain areas of this email to see how they are used for phishing. </p>
                 
         <!--Failure Close-->

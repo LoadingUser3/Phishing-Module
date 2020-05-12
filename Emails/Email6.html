@@ -43,7 +43,7 @@
         <div id="successPrompt" class="successPrompt">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
             
         
                 
@@ -57,7 +57,7 @@
          <div id="successFrom" class="successFrom">
             <div class="successContent">
                 
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 
                 <br>
                 <p>A way to be sure that the email is from a trustworthy source is to verify the URL of the sender. If there were anything off about the sender, such as a difference between a .com and a .net, the email could possibly be a phising attempt. </p>
@@ -69,7 +69,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -92,7 +92,7 @@
         <div id="successSubject" class="successSubject">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>A very threating or urgent sounding subject would be a big indicator that the email is a phishing email. This is meant to make the reader very fearful and quick to fix whatever situation the subject may think they were in.  </p>
             
@@ -102,7 +102,7 @@
         <!--Success Close-->
                <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -111,7 +111,7 @@
         <div id="successDear" class="successDear">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>A vague greeting such as "Dear Customer" may be a big indicator of phishing, especially if it came from a big company such as a bank. Most of these big companies would address the reader by their first and last name.</p>
             
@@ -121,7 +121,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -130,7 +130,7 @@
         <div id="successBody" class="successBody">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>Check for any misspelling or offers that may be too good to be true. The signature from the company may also be different from the company's actual signature. Compare with previous emails from that company in order to ensure that it is up to their standards. </p>
             
@@ -140,7 +140,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -163,7 +163,7 @@
                 <div id="successAttach" class="successAttach">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>It is more common to see attachments being used in spear phishing attempts than in normal phishing attempts. Even so, attachments in emails should always come from a reliable source. </p>
             
@@ -173,7 +173,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -182,7 +182,7 @@
                 <div id="successNothing" class="successNothing">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>Initially, this "Check Activity" button may raise suspicion on whether or not this email is a phishing attempt. Once the email was investigated and the sender was confirmed reliable, it was shown that this was not a phishing attempt. Great work! </p>
             
@@ -192,7 +192,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -201,7 +201,7 @@
         <div id="successExtraButton" class="successExtraButton">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>Sometimes, phishing emails will prompt you to click on certain buttons in order to do an action they want, when they are really leading to a site with bad intentions. </p>
             
@@ -211,7 +211,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -223,7 +223,7 @@
         <div id="failurePrompt" class="failurePrompt">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 
                 
                 
@@ -235,7 +235,7 @@
          <div id="failureFrom" class="failureFrom">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Often enough, one of the simplest ways to see if the email was a phishing attempt is to check whether it is from a reliable source. no-reply accounts with a reliable domain are usually from a trusted source. </p>
                 
                 
@@ -246,7 +246,7 @@
          <div id="failureTo" class="failureTo">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>At the moment, there is no way to detect whether the "To" section of an email can be used for phishing, as it is directed towards a specific email. Therefore, this choice would always be incorrect. </p>
                 
                 
@@ -257,7 +257,7 @@
          <div id="failureSubject" class="failureSubject">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>While the vocabulary may seem a bit urgent or major, it is not trying to grab the attention of the reader. It is more calm and straightforward on what the email is about. Due to this, the subject is not considered a suspicious item in the email.  </p>
                 
                 
@@ -269,7 +269,7 @@
          <div id="failureDear" class="failureDear">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p></p>
                 
                 
@@ -280,7 +280,7 @@
          <div id="failureBody" class="failureBody">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>This email does mention that a new sign in was made in your account, but doesn't really provide a threat nor does it ask for information from you. It doesn't prompt you to do much besides give you a heads up. Because of this, the email is not suspicious due to the body. </p>
                 
                 
@@ -291,7 +291,7 @@
          <div id="failureLink" class="failureLink">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Links are often used to steal information from potential victims. Phishers would try to recreate a form on a site that is meant to steal information. Hovering over the link to check where the hyperlink leads without clicking on it can show whether or not it is going to a reliable site. In this case, this is a reliable site.</p>
                 
                 
@@ -302,7 +302,7 @@
          <div id="failureAttach" class="failureAttach">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Never open an attachment UNLESS it is from a reliable source. Attachments that are carelessly opened can  not only lead to information from the targeted employee to be stolen but also viruses and other methods of information stealing being put onto the computer. </p>
                 
                 
@@ -313,7 +313,7 @@
          <div id="failureNothing" class="failureNothing">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>There may have been something that was missed while checking this email. Keep investigating to find out what it may have been!</p>
                 
         <!--Failure Close-->
@@ -325,7 +325,7 @@
             <div class="failureContent">
             
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <br>
                 <p>Some companies use buttons in order to allow users to do certain activites. When reading email such as this, check to see if it is from a trusted sender and if the button is clicked, make sure it leads to a trusted site. In this case, since the email sender was trusworthy, so was this button.</p>
             

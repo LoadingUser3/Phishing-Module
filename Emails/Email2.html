@@ -8,6 +8,8 @@
         <title>Phishing Inheritance</title>
         <meta name="description" content="Gameplay">
         <link rel="stylesheet" href="EmailStyle.css">
+<script src="https://use.fontawesome.com/7256fe65cf.js"></script>
+        
           
     </head>
     <body>
@@ -43,14 +45,14 @@
         <div id="successPrompt" class="successPrompt">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
             
         
                 
                 
         <!--Success Close-->
                 
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
          
             </div>
         </div>
@@ -58,7 +60,7 @@
          <div id="successFrom" class="successFrom">
             <div class="successContent">
                 
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 
                 <br>
                 <p>Who exactly is Liam? What is the address they are sending from? These are questions you should and may have asked while investigating this email. Great work! </p>
@@ -74,7 +76,7 @@
                 
                 <!--<button><a href = "Email3.html">Continue to next email</a></button>
                 
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
          
             </div>
@@ -97,7 +99,7 @@
         <div id="successSubject" class="successSubject">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>This subject tries to grab the readers atttention and generate an impulsive reaction from it. Good job seeing this! </p>
             
@@ -107,7 +109,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
             </div>
         </div>
@@ -115,7 +117,7 @@
         <div id="successDear" class="successDear">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>A vague greeting such as "Dear Trusted Inheritor" may be a big indicator of phishing. Good job noticing the vagueness of this greetings!</p>
             
@@ -125,7 +127,7 @@
         <!--Success Close-->
                 <button class="promptButton"  onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
             </div>
         </div>
@@ -133,7 +135,7 @@
         <div id="successBody" class="successBody">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>Misspellings and the amazing offer of being an inheritor of $6.8 million dollars is too good to be true. Good job noting these mistakes.  </p>
             
@@ -143,7 +145,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
             </div>
         </div>
@@ -165,7 +167,7 @@
                 <div id="successAttach" class="successAttach">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>This attachment was clearly not sent from a reliable source. Good job noticing this! </p>
             
@@ -175,7 +177,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
             </div>
         </div>
@@ -183,7 +185,7 @@
                 <div id="successNothing" class="successNothing">
             <div class="successContent">
             
-                <p>Success!</p>
+                <img src="Checkmark.png">   <p class="successTitle">Success!</p>
                 <br>
                 <p>Not every email is a phishing email. Sometimes, there may be some false flags about the email that would be misinterpreted by the reader. </p>
             
@@ -193,7 +195,7 @@
         <!--Success Close-->
                 <button class="promptButton" onclick = "randPage()"><p>Continue to next email</p></button>
                 <!--
-                <button onclick="closeSPrompt()">Continue</button>
+                <button onclick="randPage()">Continue</button>
                 -->
             </div>
         </div>
@@ -206,7 +208,7 @@
         <div id="failurePrompt" class="failurePrompt">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 
                 
                 
@@ -218,7 +220,7 @@
          <div id="failureFrom" class="failureFrom">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Often enough, one of the simplest ways to see if the email was a phishing attempt is to check whether it is from a reliable source. Any discrepencies can indicate that it is a phishing attempt. In this case, the sender was from a reliable source. </p>
                 
                 
@@ -229,7 +231,7 @@
          <div id="failureTo" class="failureTo">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>At the moment, there is no way to detect whether the "To" section of an email can be used for phishing, as it is directed towards a specific email. Therefore, this choice would always be incorrect. </p>
                 
                 
@@ -240,7 +242,7 @@
          <div id="failureSubject" class="failureSubject">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Typically, the subject may contain threatening or very urgent vocublary to inistil fear on the reader. In this case, the subject was not the reason why this email can be considered a phishing attempt. </p>
                 
                 
@@ -252,7 +254,7 @@
          <div id="failureDear" class="failureDear">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Normally, a phishing attempt will have a very generic name here, such as Customer. Most companies would either use the full name of the reader or no name at all. In this case, it was not an indicator of a phishing attempt.</p>
                 
                 
@@ -263,7 +265,7 @@
          <div id="failureBody" class="failureBody">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Carefully reading the body of an email can immediately show that it is a phishing attempt if there are any misspellings or if it asks for personal information. Most companies would not ask for any personal information via email. In this case, the body of the email was not an indicator of a phishing attempt. </p>
                 
                 
@@ -274,7 +276,7 @@
          <div id="failureLink" class="failureLink">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Links are often used to steal information from potential victims. Phishers would try to recreate a form on a site that is meant to steal information. Hovering over the link to check where the hyperlink leads without clicking on it can show whether or not it is going to a reliable site. In this case, this is a reliable site.</p>
                 
                 
@@ -285,7 +287,7 @@
          <div id="failureAttach" class="failureAttach">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>Never open an attachment UNLESS it is from a reliable source. Was this source reliable? </p>
                 
                 
@@ -296,7 +298,7 @@
          <div id="failureNothing" class="failureNothing">
             <div class="failureContent">
                 <img src="FishEx.png">
-                <p id="hack" class="hack"></p>
+                <p id="hack" class="hack">Wrong...</p>
                 <p>There may have been something that was missed while checking this email. Keep investigating to find out what it may have been!</p>
                 
         <!--Failure Close-->
@@ -335,7 +337,7 @@
                 </div>
                 
                 <div class="emailAttach">
-                <button id="emailAt" class="emailAt" onclick="attachConfirm()"> Letter.doc</button>
+                <button id="emailAt" class="emailAt" onclick="attachConfirm()"><i class="fa fa-paperclip"></i> Letter.doc</button>
                 </div>
                 <div class="emailbody" id="emailbody">
                     <p class="dear" id="dear" onclick = "successD()">Dear Trusted Inheritor</p>
