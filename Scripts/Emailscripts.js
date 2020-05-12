@@ -14,6 +14,7 @@ var spanClose = document.getElementsByClassName("close")[0];
 var audioS = document.getElementById("audioSuccess");
 var audioF = document.getElementById("audioFailure");
 
+
 function typeAnim() {
 
     //Animation for typing
@@ -291,31 +292,5 @@ function randPage() {
     window.location = epages[randomize];
     
 }
-
-/*function returning() {
-    Phaser.scene.switch("WorldScene");
-}*/
-
-
-
-/*class ReturnToWorld extends Phaser.scene {
-    constructor() {
-        super("RTW");
-    }
-    create() {
-        
-        document.getElementById("RTWButton").addEventListener("click", returning);
-        
-    //this.scene.switch("WorldScene");
-    var RetWorld = document.createElement("button");
-        RetWorld.addEventListener("keyup", returning() {
-                                  this.scene.switch("WorldScene");
-                                  })
-
-    }
-    returning() {
-            document.getElementById("RTWButton").this.scene.switch("WorldScene");
-        }
-}*/
 
 
