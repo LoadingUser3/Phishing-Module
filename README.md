@@ -1,6 +1,6 @@
 ### [Game hosted in itch.io](https://capitandolphin.itch.io/phishingmodule)
 
-### [***NOT UPDATED YET DO NOT USE***  Version that is "integrated" to full game here](https://capitandolphin.itch.io/sample1)
+
 
  ### The version integrated to the game must be refreshed to leave the phishing emails. 
 
