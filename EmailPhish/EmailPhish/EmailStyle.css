@@ -289,7 +289,42 @@ pre:hover{
     background
 }
 
+/*Content for the prompt*/
+.buConfirmContent {
+  background-color: floralwhite;
+  margin: auto;
+  padding: 20px;
+    font-size: 19px;
+  border: 5px ridge #888;
+  width: 80%;
+  text-align: center;
+    animation: fadeIn .7s;
 
+}
+
+.buConfirmContent button {
+    margin:auto;
+    text-align: center;
+    background-color: lightcyan;
+    border: 2px solid black;
+    color:black;
+    font-weight: bolder;
+    padding: 10px 20px;
+    display:block;
+    width: 25%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 6px;
+    
+    
+}
+.buConfirmContent button:hover {
+    background-color: cyan;
+     transform: skewX(-10deg);
+    background
+}
 /*Animations*/
 @keyframes slide {
     from {height: 0px;}
@@ -360,6 +395,29 @@ pre:hover{
     cursor: pointer;
     transition-duration: 1s;
     border-radius: 10px;
+    
+}
+.backToMail button{
+    margin: auto;
+    text-align: center;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    color:black;
+    font-weight: bolder;
+    padding: 10px 20px;
+    display:block;
+    width: 25%;
+    cursor: pointer;
+    transition-duration: 1s;
+    border-radius: 10px;
+    
+}
+
+.backToMail button:hover{
+    border-bottom-left-radius: 120px;
+    border-top-left-radius: 120px;
+    border-left-width: thick;
+    background-color: aquamarine;
     
 }
 
